@@ -1,7 +1,238 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Straight Flow Chart Controller-->
+        <scene sceneID="OEn-eE-7Ns">
+            <objects>
+                <tableViewController storyboardIdentifier="vn.haibui.DefaultStraightFlowViewController" modalPresentationStyle="currentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QsP-gk-5Uv" customClass="HBStraightFlowChartController" customModule="StraightFlowChart" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="IIe-iV-R6z">
+                        <rect key="frame" x="0.0" y="0.0" width="330" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="vn.haibui.BeginningActiveStateCell" rowHeight="80" id="ag4-DO-zSx" customClass="StateCell" customModule="StraightFlowChart" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ag4-DO-zSx" id="dG1-ey-Sy6">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view alpha="0.44999999999999962" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bk-rj-XMg" userLabel="verticalLine">
+                                            <rect key="frame" x="163" y="57" width="4" height="23"/>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.96078431369999995" green="0.57254901960000004" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="4" id="MoG-Ec-0hn"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osi-D9-9ws">
+                                            <rect key="frame" x="137" y="23" width="56" height="34"/>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.96078431369999995" green="0.57254901960000004" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                            <state key="normal" title="Begin">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="centerX" secondItem="9bk-rj-XMg" secondAttribute="centerX" id="6FR-KG-969"/>
+                                        <constraint firstAttribute="bottom" secondItem="9bk-rj-XMg" secondAttribute="bottom" id="MJK-hy-XUZ"/>
+                                        <constraint firstAttribute="centerX" secondItem="Osi-D9-9ws" secondAttribute="centerX" id="SeF-U2-Xcs"/>
+                                        <constraint firstAttribute="centerY" secondItem="Osi-D9-9ws" secondAttribute="centerY" id="fv9-7y-6vc"/>
+                                        <constraint firstItem="9bk-rj-XMg" firstAttribute="top" secondItem="Osi-D9-9ws" secondAttribute="bottom" id="qvO-tk-tYh"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="stateButton" destination="Osi-D9-9ws" id="Jib-W8-i6w"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="vn.haibui.InMiddleActiveStateCell" rowHeight="80" id="lSX-7N-1qn" customClass="StateCell" customModule="StraightFlowChart" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lSX-7N-1qn" id="pDh-Iu-H5U">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view alpha="0.44999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deD-kt-sKN" userLabel="verticalLine">
+                                            <rect key="frame" x="163" y="0.0" width="4" height="23"/>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.96078431369999995" green="0.57254901960000004" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="4" id="PCe-3k-PaE"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brd-gu-ziK">
+                                            <rect key="frame" x="96" y="23" width="138" height="34"/>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.96078431369999995" green="0.57254901960000004" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                            <state key="normal" title="Waiting for review">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <view alpha="0.44999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chx-QA-ryS" userLabel="verticalLine">
+                                            <rect key="frame" x="163" y="57" width="4" height="23"/>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.96078431369999995" green="0.57254901960000004" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="4" id="QxK-qM-NdT"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="chx-QA-ryS" firstAttribute="top" secondItem="brd-gu-ziK" secondAttribute="bottom" id="6Ln-e7-2nU"/>
+                                        <constraint firstItem="deD-kt-sKN" firstAttribute="top" secondItem="pDh-Iu-H5U" secondAttribute="top" id="Ar2-WT-WnQ"/>
+                                        <constraint firstAttribute="centerX" secondItem="chx-QA-ryS" secondAttribute="centerX" id="Dam-L6-HPg"/>
+                                        <constraint firstAttribute="bottom" secondItem="chx-QA-ryS" secondAttribute="bottom" id="Hsq-LV-G8l"/>
+                                        <constraint firstAttribute="centerY" secondItem="brd-gu-ziK" secondAttribute="centerY" id="Jr7-BK-c47"/>
+                                        <constraint firstItem="brd-gu-ziK" firstAttribute="top" secondItem="deD-kt-sKN" secondAttribute="bottom" id="RE1-k3-Rfe"/>
+                                        <constraint firstAttribute="centerX" secondItem="brd-gu-ziK" secondAttribute="centerX" id="yyn-Ty-Nk8"/>
+                                        <constraint firstAttribute="centerX" secondItem="deD-kt-sKN" secondAttribute="centerX" id="zHW-yn-0bu"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="stateButton" destination="brd-gu-ziK" id="gZa-Oq-9Ta"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="vn.haibui.FinalActiveStateCell" rowHeight="80" id="qE4-Gk-92Z" customClass="StateCell" customModule="StraightFlowChart" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qE4-Gk-92Z" id="RDs-Rr-Mzs">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view alpha="0.44999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKa-O8-ovx" userLabel="verticalLine">
+                                            <rect key="frame" x="163" y="0.0" width="4" height="23"/>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.96078431369999995" green="0.57254901960000004" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="4" id="pKf-wL-qNN"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGn-QA-hRY">
+                                            <rect key="frame" x="133" y="23" width="64" height="34"/>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.96078431369999995" green="0.57254901960000004" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                            <state key="normal" title="Go live">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="centerX" secondItem="bGn-QA-hRY" secondAttribute="centerX" id="B84-Zw-ETF"/>
+                                        <constraint firstItem="bGn-QA-hRY" firstAttribute="centerX" secondItem="AKa-O8-ovx" secondAttribute="centerX" id="Bkq-JW-NB4"/>
+                                        <constraint firstAttribute="centerY" secondItem="bGn-QA-hRY" secondAttribute="centerY" id="m7l-5W-GDy"/>
+                                        <constraint firstItem="bGn-QA-hRY" firstAttribute="top" secondItem="AKa-O8-ovx" secondAttribute="bottom" id="x0G-av-rbK"/>
+                                        <constraint firstItem="AKa-O8-ovx" firstAttribute="top" secondItem="RDs-Rr-Mzs" secondAttribute="top" id="ynA-hK-bmY"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="vn.haibui.InMiddleInactiveStateCell" rowHeight="80" id="lJK-KL-qrs" customClass="StateCell" customModule="StraightFlowChart" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lJK-KL-qrs" id="SHj-0Y-208">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view alpha="0.44999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NwZ-ve-5zJ" userLabel="verticalLine">
+                                            <rect key="frame" x="163" y="0.0" width="4" height="23"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="4" id="s2m-CA-xQh"/>
+                                            </constraints>
+                                        </view>
+                                        <view alpha="0.44999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Js6-V5-hL6" userLabel="verticalLine">
+                                            <rect key="frame" x="163" y="57" width="4" height="23"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="4" id="1qm-AD-2ls"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6N-Jq-zls">
+                                            <rect key="frame" x="112" y="23" width="107" height="34"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                            <state key="normal" title="Under review">
+                                                <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="centerX" secondItem="q6N-Jq-zls" secondAttribute="centerX" id="4Ai-3g-XW3"/>
+                                        <constraint firstAttribute="centerY" secondItem="q6N-Jq-zls" secondAttribute="centerY" id="6Rr-0c-RFB"/>
+                                        <constraint firstItem="Js6-V5-hL6" firstAttribute="top" secondItem="q6N-Jq-zls" secondAttribute="bottom" id="CMt-nN-wpp"/>
+                                        <constraint firstAttribute="centerX" secondItem="Js6-V5-hL6" secondAttribute="centerX" id="GZA-az-cAJ"/>
+                                        <constraint firstItem="q6N-Jq-zls" firstAttribute="top" secondItem="NwZ-ve-5zJ" secondAttribute="bottom" id="cgr-YG-6CK"/>
+                                        <constraint firstAttribute="bottom" secondItem="Js6-V5-hL6" secondAttribute="bottom" id="f7G-gu-Pd6"/>
+                                        <constraint firstItem="NwZ-ve-5zJ" firstAttribute="top" secondItem="SHj-0Y-208" secondAttribute="top" id="qd6-Qt-a3k"/>
+                                        <constraint firstAttribute="centerX" secondItem="NwZ-ve-5zJ" secondAttribute="centerX" id="wVf-M5-9np"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="stateButton" destination="q6N-Jq-zls" id="ods-8Z-5Xr"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="vn.haibui.FinalInactiveStateCell" rowHeight="80" id="Tdh-sf-jPb" customClass="StateCell" customModule="StraightFlowChart" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tdh-sf-jPb" id="5f7-pN-ZDv">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view alpha="0.44999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C86-Xq-ifC" userLabel="verticalLine">
+                                            <rect key="frame" x="163" y="0.0" width="4" height="23"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="4" id="vh7-9S-7cr"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3w-09-QrY">
+                                            <rect key="frame" x="124" y="23" width="83" height="34"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                            <state key="normal" title="Approved">
+                                                <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="g3w-09-QrY" firstAttribute="top" secondItem="C86-Xq-ifC" secondAttribute="bottom" id="Ofk-60-bIe"/>
+                                        <constraint firstItem="C86-Xq-ifC" firstAttribute="top" secondItem="5f7-pN-ZDv" secondAttribute="top" id="aCE-TK-TLv"/>
+                                        <constraint firstAttribute="centerX" secondItem="g3w-09-QrY" secondAttribute="centerX" id="fnL-73-mMm"/>
+                                        <constraint firstAttribute="centerY" secondItem="g3w-09-QrY" secondAttribute="centerY" id="xFr-S5-SDs"/>
+                                        <constraint firstAttribute="centerX" secondItem="C86-Xq-ifC" secondAttribute="centerX" id="xMr-aV-aXk"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="stateButton" destination="g3w-09-QrY" id="e2f-U3-VTP"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QsP-gk-5Uv" id="tO7-k7-OIN"/>
+                            <outlet property="delegate" destination="QsP-gk-5Uv" id="1fD-Q8-fnB"/>
+                        </connections>
+                    </tableView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="330" height="600"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rSs-ZA-Azx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="329" y="387"/>
+        </scene>
+    </scenes>
 </document>
