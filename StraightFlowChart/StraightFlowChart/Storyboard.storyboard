@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Straight Flow Chart Controller-->
@@ -15,8 +16,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="vn.haibui.BeginningActiveStateCell" rowHeight="80" id="ag4-DO-zSx" customClass="StateCell" customModule="StraightFlowChart" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="22" width="330" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ag4-DO-zSx" id="dG1-ey-Sy6">
+                                    <rect key="frame" x="0.0" y="0.0" width="330" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view alpha="0.44999999999999962" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bk-rj-XMg" userLabel="verticalLine">
@@ -28,7 +31,7 @@
                                             </constraints>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osi-D9-9ws">
-                                            <rect key="frame" x="137" y="23" width="56" height="34"/>
+                                            <rect key="frame" x="138" y="23" width="55" height="34"/>
                                             <animations/>
                                             <color key="backgroundColor" red="0.96078431369999995" green="0.57254901960000004" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
@@ -52,8 +55,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="vn.haibui.InMiddleActiveStateCell" rowHeight="80" id="lSX-7N-1qn" customClass="StateCell" customModule="StraightFlowChart" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="102" width="330" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lSX-7N-1qn" id="pDh-Iu-H5U">
+                                    <rect key="frame" x="0.0" y="0.0" width="330" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view alpha="0.44999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deD-kt-sKN" userLabel="verticalLine">
@@ -65,7 +70,7 @@
                                             </constraints>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brd-gu-ziK">
-                                            <rect key="frame" x="96" y="23" width="138" height="34"/>
+                                            <rect key="frame" x="96" y="23" width="139" height="34"/>
                                             <animations/>
                                             <color key="backgroundColor" red="0.96078431369999995" green="0.57254901960000004" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
@@ -100,8 +105,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="vn.haibui.FinalActiveStateCell" rowHeight="80" id="qE4-Gk-92Z" customClass="StateCell" customModule="StraightFlowChart" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="182" width="330" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qE4-Gk-92Z" id="RDs-Rr-Mzs">
+                                    <rect key="frame" x="0.0" y="0.0" width="330" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view alpha="0.44999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKa-O8-ovx" userLabel="verticalLine">
@@ -113,7 +120,7 @@
                                             </constraints>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGn-QA-hRY">
-                                            <rect key="frame" x="133" y="23" width="64" height="34"/>
+                                            <rect key="frame" x="134" y="23" width="63" height="34"/>
                                             <animations/>
                                             <color key="backgroundColor" red="0.96078431369999995" green="0.57254901960000004" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
@@ -132,10 +139,15 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <outlet property="stateButton" destination="bGn-QA-hRY" id="Xmd-Fi-QdZ"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="vn.haibui.InMiddleInactiveStateCell" rowHeight="80" id="lJK-KL-qrs" customClass="StateCell" customModule="StraightFlowChart" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="262" width="330" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lJK-KL-qrs" id="SHj-0Y-208">
+                                    <rect key="frame" x="0.0" y="0.0" width="330" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view alpha="0.44999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NwZ-ve-5zJ" userLabel="verticalLine">
@@ -183,8 +195,10 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="vn.haibui.FinalInactiveStateCell" rowHeight="80" id="Tdh-sf-jPb" customClass="StateCell" customModule="StraightFlowChart" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="342" width="330" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tdh-sf-jPb" id="5f7-pN-ZDv">
+                                    <rect key="frame" x="0.0" y="0.0" width="330" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view alpha="0.44999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C86-Xq-ifC" userLabel="verticalLine">
